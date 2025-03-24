@@ -1,47 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Effetto di scorrimento per la navbar
-    const navbar = document.getElementById("navbar");
+    // Cambia il colore della navbar quando si scorre la pagina
     window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
         if (window.scrollY > 50) {
-            navbar.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
-            navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
+            navbar.style.backgroundColor = "rgba(139, 69, 19, 0.9)"; // Marrone chiaro
         } else {
             navbar.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
-            navbar.style.boxShadow = "none";
         }
     });
 
     // Effetto zoom sulle immagini della galleria
-    const galleryImages = document.querySelectorAll(".gallery-item img, .image-container img");
-    galleryImages.forEach(img => {
-        img.addEventListener("mouseenter", () => {
-            img.style.transform = "scale(1.1)";
+    const images = document.querySelectorAll(".hover-zoom img");
+    images.forEach(img => {
+        img.addEventListener("mouseover", function () {
+            this.style.transform = "scale(1.1)";
         });
-        img.addEventListener("mouseleave", () => {
-            img.style.transform = "scale(1)";
+        img.addEventListener("mouseout", function () {
+            this.style.transform = "scale(1)";
         });
     });
 
-    // Gestione del modulo RSVP
-    const rsvpForm = document.getElementById("rsvp-form");
-    const rsvpMessage = document.getElementById("rsvp-message");
-    
-    rsvpForm.addEventListener("submit", function (event) {
+    // Gestione del form RSVP
+    const form = document.getElementById("rsvp-form");
+    const messageBox = document.getElementById("rsvp-message");
+
+    form.addEventListener("submit", function (event) {
         event.preventDefault();
-        
-        const formData = new FormData(rsvpForm);
-        const name = formData.get("name");
-        const attendance = formData.get("attendance");
-        
+
+        const name = document.getElementById("name").value;
+        const guests = document.getElementById("guests").value;
+        const attendance = document.querySelector("input[name='attendance']:checked").value;
+
+        messageBox.classList.remove("hidden");
         if (attendance === "yes") {
-            rsvpMessage.textContent = `Grazie per aver confermato, ${name}! Non vediamo l'ora di festeggiare con te! 🥂`;
-            rsvpMessage.style.color = "green";
+            messageBox.innerHTML = `<p>Grazie, ${name}! Non vediamo l'ora di festeggiare con te e i tuoi ${guests} ospiti! 🎉</p>`;
+            messageBox.style.backgroundColor = "#c0d890"; // Verde tenue
         } else {
-            rsvpMessage.textContent = `Ci dispiace che tu non possa partecipare, ${name}. Sarai con noi col cuore! ❤️`;
-            rsvpMessage.style.color = "red";
+            messageBox.innerHTML = `<p>Ci dispiace che non possa partecipare, ${name}. Speriamo di rivederti presto! 💛</p>`;
+            messageBox.style.backgroundColor = "#eac67a"; // Giallo tenue
         }
-        
-        rsvpMessage.classList.remove("hidden");
-        rsvpForm.reset();
+
+        form.reset();
     });
 });
