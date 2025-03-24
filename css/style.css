@@ -55,6 +55,11 @@ p {
 a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff7b94;
 }
 
 /* Utility Classes */
@@ -111,21 +116,6 @@ a {
     position: relative;
 }
 
-#navbar a:hover {
-    color: #ff7b94;
-}
-
-#navbar a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(to right, #ffd6e0, #c8f4f9);
-    transition: width 0.3s;
-}
-
 #navbar a:hover::after {
     width: 100%;
 }
@@ -153,6 +143,92 @@ a {
     margin-bottom: 0.5rem;
 }
 
-#hero h1 span {
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(to right, #ffd6e0, #c8f4f9);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* RSVP Form */
+#rsvp-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff7b94;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.hashtag {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    color: #ffd6e0;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+    font-size: 0.9rem;
 }
