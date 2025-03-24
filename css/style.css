@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #4a3d2f;
+    background-color: #f5f1e3;
 }
 
 h1, h2, h3 {
@@ -24,6 +24,7 @@ h1, h2, h3 {
 h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
+    color: #5c7041;
 }
 
 h2 {
@@ -31,6 +32,7 @@ h2 {
     margin-bottom: 2rem;
     text-align: center;
     position: relative;
+    color: #826a4b;
 }
 
 h2::after {
@@ -38,14 +40,14 @@ h2::after {
     display: block;
     width: 80px;
     height: 3px;
-    background: linear-gradient(to right, #ffd6e0, #c8f4f9);
+    background: linear-gradient(to right, #a5c882, #f4e3b2);
     margin: 1rem auto;
 }
 
 h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #555;
+    color: #6a543d;
 }
 
 p {
@@ -59,7 +61,7 @@ a {
 }
 
 a:hover {
-    color: #ff7b94;
+    color: #8c5c3a;
 }
 
 /* Utility Classes */
@@ -74,7 +76,7 @@ a:hover {
 }
 
 .bg-light {
-    background-color: #f9f9f9;
+    background-color: #ede7db;
 }
 
 .full-height {
@@ -91,7 +93,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(245, 241, 227, 0.9);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding: 1rem 0;
@@ -111,7 +113,7 @@ a:hover {
 #navbar a {
     font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
-    color: #555;
+    color: #6a543d;
     transition: color 0.3s;
     position: relative;
 }
@@ -122,12 +124,12 @@ a:hover {
 
 /* Hero Section */
 #hero {
-    background: linear-gradient(135deg, #ffd6e0, #c8f4f9);
+    background: linear-gradient(135deg, #c3a995, #a5c882);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #333;
+    color: #4a3d2f;
     position: relative;
     overflow: hidden;
 }
@@ -139,7 +141,7 @@ a:hover {
 #hero h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 6rem;
-    color: #333;
+    color: #5c7041;
     margin-bottom: 0.5rem;
 }
 
@@ -147,10 +149,10 @@ a:hover {
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background: linear-gradient(to right, #ffd6e0, #c8f4f9);
+    background: linear-gradient(to right, #c3a995, #f4e3b2);
     border-radius: 50px;
     font-size: 1.2rem;
-    color: #333;
+    color: #4a3d2f;
     font-weight: 600;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -196,12 +198,12 @@ a:hover {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #ff7b94;
+    border-color: #8c5c3a;
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: #4a3d2f;
     color: white;
     padding: 3rem 0 1rem;
 }
@@ -223,12 +225,12 @@ footer {
 .hashtag {
     font-family: 'Great Vibes', cursive;
     font-size: 1.8rem;
-    color: #ffd6e0;
+    color: #c3a995;
 }
 
 .copyright {
     text-align: center;
     padding-top: 1rem;
-    border-top: 1px solid #555;
+    border-top: 1px solid #6a543d;
     font-size: 0.9rem;
 }
