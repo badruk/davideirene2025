@@ -1,1 +1,172 @@
-prova
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonio di Anna & Marco</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#story">La Nostra Storia</a></li>
+            <li><a href="#details">Dettagli</a></li>
+            <li><a href="#gallery">Galleria</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="full-height">
+        <div class="hero-content">
+            <h1>Anna <span>&</span> Marco</h1>
+            <p class="subtitle">Ci sposiamo!</p>
+            <p class="date">15 Settembre 2024</p>
+            <p class="location">Villa dei Fiori, Firenze</p>
+            <a href="#story" class="btn">Scopri di più</a>
+        </div>
+    </section>
+
+    <section id="story" class="section-padding">
+        <div class="container">
+            <h2>La Nostra Storia</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>Ci siamo incontrati nel 2018 durante un viaggio a Roma. Era una calda sera d'estate quando i nostri percorsi si sono incrociati in un piccolo caffè vicino al Pantheon.</p>
+                    <p>Da quel momento, abbiamo scoperto di condividere la passione per i viaggi, la buona cucina e le lunghe passeggiate al tramonto. Dopo cinque anni di amore, avventure e crescita insieme, abbiamo deciso di unire le nostre vite per sempre.</p>
+                    <p>Il nostro fidanzamento è avvenuto durante un weekend a Venezia, con una romantica proposta sul Ponte dei Sospiri al tramonto.</p>
+                </div>
+                <div class="story-images">
+                    <div class="image-container">
+                        <img src="images/story1.jpg" alt="Anna e Marco a Roma" class="hover-zoom">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/story2.jpg" alt="Proposta di matrimonio" class="hover-zoom">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="section-padding bg-light">
+        <div class="container">
+            <h2>Dettagli dell'Evento</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Quando</h3>
+                    <p>Sabato, 15 Settembre 2024</p>
+                    <p>Cerimonia: 16:00</p>
+                    <p>Ricevimento: 18:00 - 01:00</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Dove</h3>
+                    <p>Villa dei Fiori</p>
+                    <p>Via dei Gelsi 123, Firenze</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-small">Vedi sulla mappa</a>
+                </div>
+                <div class="detail-card">
+                    <h3>Dress Code</h3>
+                    <p>Formale elegante</p>
+                    <p>Tonelli pastello e neutri</p>
+                    <p>Niente bianco/avorio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2>I Nostri Momenti</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item hover-zoom">
+                    <img src="images/gallery1.jpg" alt="Gallery image 1">
+                </div>
+                <div class="gallery-item hover-zoom">
+                    <img src="images/gallery2.jpg" alt="Gallery image 2">
+                </div>
+                <div class="gallery-item hover-zoom">
+                    <img src="images/gallery3.jpg" alt="Gallery image 3">
+                </div>
+                <div class="gallery-item hover-zoom">
+                    <img src="images/gallery4.jpg" alt="Gallery image 4">
+                </div>
+                <div class="gallery-item hover-zoom">
+                    <img src="images/gallery5.jpg" alt="Gallery image 5">
+                </div>
+                <div class="gallery-item hover-zoom">
+                    <img src="images/gallery6.jpg" alt="Gallery image 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="section-padding bg-light">
+        <div class="container">
+            <h2>Conferma la tua presenza</h2>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Nome e Cognome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Numero di ospiti</label>
+                    <select id="guests" name="guests" required>
+                        <option value="" disabled selected>Seleziona</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Parteciperai?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="attendance" value="yes" required> 
+                            <span>Con piacere!</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="attendance" value="no" required> 
+                            <span>Con dispiacere no</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Messaggio (opzionale)</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn">Invia</button>
+            </form>
+            <div id="rsvp-message" class="hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contatti</h3>
+                    <p>Anna: +39 123 456789</p>
+                    <p>Marco: +39 987 654321</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Condividi i tuoi momenti</h3>
+                    <p>Usa l'hashtag</p>
+                    <p class="hashtag">#AnnaEMarco2024</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Anna & Marco. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
