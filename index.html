@@ -61,10 +61,6 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body id="top">
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
 <section class="hero">
     <section class="navigation">
         <header>
@@ -320,7 +316,6 @@
     </div>
 </section>
 
-<!-- Sostituisci l'intera sezione <section id="map"> con questo codice: -->
 <section id="map" class="section-padding">
     <div class="text-center">
         <h3>Come arrivare?</h3>
@@ -411,11 +406,29 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-cutlery"></i><input name="add-food" class=""
+                                                                     placeholder="Esigenze alimentari"
+                                                                     >
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-commenting"></i><input name="add-notes" class=""
+                                                                 placeholder="Note aggiuntive"
+                                                                 >
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
+                                                                  max="10"
                                                                   placeholder="Numero partecipanti"
                                                                   required>
                             </div>
@@ -429,6 +442,9 @@
                             </div>
                         </div>
                     </div>
+
+                    
+
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
