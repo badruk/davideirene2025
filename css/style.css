@@ -1,3 +1,15 @@
+/* Aggiungi nel tuo file CSS (styles.min.css o queries.css) */
+.google-maps-iframe {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.google-maps-iframe iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px; /* Puoi regolare questa dimensione */
+}
+
 /* Reset e Base */
 * {
     margin: 0;
