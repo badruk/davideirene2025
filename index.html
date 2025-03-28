@@ -177,10 +177,6 @@
                 </a>
             </div>
         </div>
-        <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
-            </div>
-        </div>-->
     </div>
 
     <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
@@ -316,13 +312,72 @@
     </div>
 </section>
 
-<section id="map" class="section-padding">
+<div class="text-center">
+    <h3>Come arrivare?</h3>
+</div>
+
+
+<div class="text-center section-padding">
+    <div class="btn-group" role="group">
+        <button id="show-map1" class="btn btn-primary active">Parrocchia di San Pio X</button>
+        <button id="show-map2" class="btn btn-primary">Convento del Carmine</button>
+    </div>
+</div>
+
+<section id="map-1" class="section-padding">
+    <section id="map" class="section-padding">
     <div class="text-center">
-        <h3>Come arrivare?</h3>
-        <p>Raggiungici</p>
+        <p>Parrocchia di San Pio X, Massa</p>
     </div>
     
-    <!-- Mappa Google in iframe -->
+    <div class="google-maps-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.4342278195077!2d10.130628775299353!3d44.03308482777963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d50ed0994039af%3A0x940b87658590e223!2sChiesa%20Parrocchiale%20di%20San%20Pio%20X!5e0!3m2!1sit!2sit!4v1743145952388!5m2!1sit!2sit" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Chiesa Parrocchiale di San Pio X</h5>
+                            <p>Via Alessandro Volta, 8, 54100 Massa MS</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Don. Maurizio Manganelli</h5>
+                            <p><i class="fa fa-mobile"></i> <a href="tel://+XXXX">+XXXX</a><br>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Mostra mappa1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<section id="map-2" class="section-padding" style="display: none;">
+    <section id="map-2" class="section-padding">
+    <div class="text-center">
+        <p>Convento del Carmine</p>
+    </div>
+    
     <div class="google-maps-iframe">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.1899962317584!2d10.126039575104986!3d44.230984014872085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d5164ae7000013%3A0x187324e9a04a84af!2sEx%20Convento%20del%20Carmine!5e1!3m2!1sit!2sit!4v1743099175647!5m2!1sit!2sit" 
                 width="100%" 
@@ -355,7 +410,7 @@
                     </div>
                     <div class="row text-center">
                         <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Mostra mappa</a>
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Mostra mappa2</a>
                         </div>
                     </div>
                 </div>
@@ -363,6 +418,11 @@
         </div>
     </div>
 </section>
+</section>
+
+
+
+
 
 <section class="rsvp text-center" id="rsvp">
 
@@ -475,7 +535,5 @@
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs2L1IYGnLPTJz01xRvfwmZZOX3VLh028&callback=initMap"></script>
 </body>
 </html>
