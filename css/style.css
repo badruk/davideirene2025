@@ -82,6 +82,8 @@ a:hover {
     margin: 0 auto;
 }
 
+
+
 .section-padding {
     padding: 5rem 0;
 }
@@ -252,4 +254,25 @@ footer {
     padding-top: 1rem;
     border-top: 1px solid #6a543d;
     font-size: 0.9rem;
+}
+
+
+
+.testimonial-circle {
+    background: red;
+    width: 200px;       /* Imposta la larghezza desiderata */
+    height: 200px;      /* Imposta l'altezza desiderata (deve essere uguale alla larghezza per un cerchio perfetto) */
+    border-radius: 50%; /* Crea la forma circolare */
+    overflow: hidden;   /* Ritaglia l'immagine oltre i bordi del cerchio */
+    position: relative; /* Necessario per posizionare eventuali elementi interni */
+    margin: 0 auto;     /* Centra il cerchio orizzontalmente (opzionale) */
+    border: 2px solid #ccc; /* Aggiungi un bordo (opzionale) */
+}
+
+.testimonial-image {
+    width: 100%;        /* Riempi tutto lo spazio del contenitore */
+    height: 100%;       /* Riempi tutto lo spazio del contenitore */
+    object-fit: cover;  /* Scala e ritaglia l'immagine per coprire l'area */
+    object-position: center; /* Centra l'immagine nel ritaglio */
+    display: block;     /* Rimuove lo spazio extra sotto l'immagine */
 }
