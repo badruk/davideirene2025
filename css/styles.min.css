@@ -52,8 +52,8 @@ h5 {
 .btn:hover,
 .btn:focus {
 	color: #fff;
-	border-color: #e8ca6f;
-	background-color: #e8ca6f
+	border-color: #8e6c88;
+	background-color: #8e6c88
 }
 
 .btn-white {
@@ -68,19 +68,19 @@ h5 {
 
 .btn-white:hover,
 .btn-white:focus {
-	color: #e8ca6f;
-	border-color: #e8ca6f
+	color: #8e6c88;
+	border-color: #8e6c88
 }
 
 .btn-fill {
 	color: #fff;
-	border: solid 2px #e8ca6f;
+	border: solid 2px #8e6c88;
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
 	display: inline-block;
 	text-transform: uppercase;
-	background-color: #e8ca6f
+	background-color: #8e6c88
 }
 
 .btn-fill:hover,
@@ -129,7 +129,7 @@ section.blog {
 }
 
 a {
-	color: #e8ca6f;
+	color: #8e6c88;
 	-webkit-transition-timing-function: ease;
 	transition-timing-function: ease;
 	-webkit-transition-duration: 200ms;
@@ -497,7 +497,7 @@ header ul.primary-nav li a {
 }
 
 header ul.primary-nav li a:hover {
-	color: #e8ca6f
+	color: #8e6c88
 }
 
 header ul.primary-nav li:last-child a {
@@ -513,7 +513,7 @@ header ul.member-actions li a {
 }
 
 header ul.member-actions li a:hover {
-	color: #e8ca6f
+	color: #8e6c88
 }
 
 header .header-nav {
@@ -542,7 +542,7 @@ header .member-actions {
 
 .intro span.icon {
 	font-size: 40px;
-	color: #e8ca6f;
+	color: #8e6c88;
 	font-weight: bold
 }
 
@@ -587,7 +587,7 @@ header .member-actions {
 
 .features span.icon {
 	font-size: 35px;
-	color: #e8ca6f;
+	color: #8e6c88;
 	font-weight: bold
 }
 
@@ -992,7 +992,7 @@ header .member-actions {
 }
 
 .rsvp .rsvp-form .form-input-group i {
-	color: #e8ca6f;
+	color: #8e6c88;
 	font-size: 14px
 }
 
@@ -1115,4 +1115,89 @@ body.modal-open {
 #testimoni-modal h4 {
     margin-top: 20px;
     color: #555;
+}
+
+/* Stile base per tutti i dispositivi */
+.btn-reach {
+  display: block;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+/* Stile hover */
+.btn-reach:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #222;
+}
+
+/* Icone */
+.btn-reach i {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #8e6c88; /* Colore tema */
+}
+
+/* Testo piccolo (indirizzo) */
+.btn-reach small {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+  font-size: 0.85em;
+}
+
+/* Pulsante mappa speciale */
+.btn-map {
+  background: linear-gradient(135deg, #8e6c88, #6c5b7b);
+  color: white !important;
+  text-align: center;
+}
+
+.btn-map i {
+  color: white;
+}
+
+.btn-map small {
+  color: rgba(255,255,255,0.8) !important;
+}
+
+/* Ottimizzazione mobile */
+@media (max-width: 768px) {
+  .btn-reach {
+	  background: transparent;
+	  border: 2px solid #8e6c88;
+	  color: #8e6c88;
+	}
+  
+  .how-to-reach h2 {
+    font-size: 1.5em;
+  }
+}
+.btn-reach {
+  width: 280px; /* Larghezza fissa per entrambi i pulsanti */
+  margin: 0 auto; /* Centratura orizzontale */
+  padding: 15px;
+  /* Mantieni tutti gli altri stili esistenti */
+}
+
+/* Ottimizzazione mobile */
+@media (max-width: 576px) {
+  .row.justify-content-center {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .col-auto {
+    width: 100%;
+    max-width: 280px;
+  }
 }

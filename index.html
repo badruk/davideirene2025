@@ -17,6 +17,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<link rel="manifest" href="manifest.json">
 	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 	<script>
 		function loadCssFromCDN(css) {
@@ -353,17 +354,26 @@
 
 	<div class="text-center section-padding">
 
-		<div class="btn-group btn-group-accent" role="group">
-			<a class="btn btn-accent btn-small" data-toggle="modal" data-target="#contributo-modal">
-				<i class="fa fa-barcode"></i>&nbsp;&nbsp;Clicca qui!
-			</a>
-
-			<button id="show-map1" class="btn btn-accent btn-small">
-				<i class="fa fa-map-marker"></i>&nbsp;&nbsp;Chiesa Parrocchiale di San Pio X
-			</button>
-			<button id="show-map2" class="btn btn-accent btn-small">
-				<i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ex Convento del Carmine
-			</button>
+		<div class="container how-to-reach">
+		  <div class="row justify-content-center"> <!-- Centra le colonne -->
+		    <!-- Pulsante 1 -->
+		    <div class="col-auto mb-3"> <!-- Colonna adatta alla larghezza del contenuto -->
+		      <a id="show-map1" class="btn-reach d-block"> <!-- d-block per occupare tutta la larghezza disponibile -->
+		        <i class="fas fa-church"></i>
+		        <span>CHIESA DI SAN PIO X</span>
+		        <small>Via Roma 123, Città</small>
+		      </a>
+		    </div>
+		    
+		    <!-- Pulsante 2 -->
+		    <div class="col-auto mb-3">
+		      <a id="show-map2" class="btn-reach d-block">
+		        <i class="fas fa-building"></i>
+		        <span>EX CONVENTO DEL CARMINE</span>
+		        <small>Piazza Garibaldi 1, Città</small>
+		      </a>
+		    </div>
+		  </div>
 		</div>
 
 		<section id="map-1" class="section-padding">
@@ -377,20 +387,6 @@
 				</iframe>
 			</div>
 
-			<div class="container pointer-events-none">
-				<div class="row">
-					<div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-						<div class="text-center">
-							<button class="btn btn-accent btn-small toggle-map-content pointer-events-auto" data-target="map-1">
-								<i class="fa fa-info-circle"></i>&nbsp;&nbsp; Mostra info
-							</button>
-						</div>
-						<div id="map-1-content" class="pointer-events-auto" style="display: none;">
-							
-						</div>
-					</div>
-				</div>
-			</div>
 		</section>
 
 		<section id="map-2" class="section-padding" style="display: none;">
@@ -402,37 +398,6 @@
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.1899962317584!2d10.126039575104986!3d44.230984014872085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d5164ae7000013%3A0x187324e9a04a84af!2sEx%20Convento%20del%20Carmine!5e1!3m2!1sit!2sit!4v1743099175647!5m2!1sit!2sit"
 				width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 				</iframe>
-			</div>
-
-			<div class="container pointer-events-none">
-				<div class="row">
-					<div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-						<div class="text-center">
-							<button class="btn btn-accent btn-small toggle-map-content pointer-events-auto" data-target="map-2">
-								<i class="fa fa-info-circle"></i>&nbsp;&nbsp; Mostra info
-							</button>
-						</div>
-						<div id="map-2-content" class="pointer-events-auto" style="display: none;">
-							<div class="row">
-								<div class="col-md-6">
-									<h5>Ex-Convento del Carmine</h5>
-									<p>Fivizzano, Località. Cerignano, 54013 Massa MS</p>
-								</div>
-								<div class="col-md-6">
-									<h5>Don. Maurizio Manganelli</h5>
-									<p><i class="fa fa-mobile"></i> <a href="tel://+XXXX">+XXXX</a></p>
-								</div>
-							</div>
-							<div class="row text-center">
-								<div class="col-md-6" style="padding: 5px;">
-									<button class="btn btn-accent btn-small btn-show-map" data-target="map-2">
-										<i class="fa fa-map-marker"></i>&nbsp;&nbsp; Nascondi info
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</section>
 	</div>
