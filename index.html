@@ -1,565 +1,548 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Davide & Irene</title>
-	<meta name="description" content="Vorremmo invitarti.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#ffffff">
-	<meta property="og:title" content="Davide & Irene">
-	<meta property="og:description" content="Vorremmo invitarti.">
-	<meta property="og:image" content="https://badruk.github.io/davideirene2025/img/hero-min.jpg">
-	<meta property="og:type" content="website">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Davide & Irene</title>
+  <meta name="description" content="Vorremmo invitarti.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Davide & Irene">
+  <meta property="og:description" content="Vorremmo invitarti.">
+  <meta property="og:image" content="https://badruk.github.io/davideirene2025/img/hero-min.jpg">
+  <meta property="og:type" content="website">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-	<script>
-		function loadCssFromCDN(css) {
-			const link = document.createElement('link');
-			if (css === 'animate.css') {
-				link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
-			} else if (css === 'font-awesome.css') {
-				link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-			}
-			link.rel = 'stylesheet';
-			document.getElementsByTagName('head')[0].appendChild(link);
-		}
+  <script>
+    function loadCssFromCDN(css) {
+      const link = document.createElement('link');
+      if (css === 'animate.css') {
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+      } else if (css === 'font-awesome.css') {
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+      }
+      link.rel = 'stylesheet';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    }
 
-		function loadJsFromCDN(js) {
-			if (js === 'waypoints.js') {
-				document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
-			} else if (js === 'jquery.js') {
-				document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
-			}
-		}
-	</script>
+    function loadJsFromCDN(js) {
+      if (js === 'waypoints.js') {
+        document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+      } else if (js === 'jquery.js') {
+        document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+      }
+    }
+  </script>
 
-	<link rel="stylesheet" href="css/normalize.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.css">
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="css/styles.min.css">
-	<link rel="stylesheet" href="css/queries.css">
-	<link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
-	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body id="top">
-	<section class="hero">
-		<section class="navigation">
-			<header>
-				<div class="header-content">
-					<div class="logo">
-						<a href="#"><img src="img/logo.png" alt="Logo"></a>
-					</div>
-					<div class="header-nav">
-						<nav>
-							<ul class="primary-nav">
-								<li><a href="#intro">Come ci siamo conosciuti</a></li>
-								<li><a href="#events">Evento</a></li>
-								<li><a href="#instagram">Instagram</a></li>
-								<li><a href="#eng-pics">La nostra storia</a></li>
-								<li><a href="#e_se">... e se?</a></li>
-							</ul>
-							<ul class="member-actions">
-								<li><a href="#map" class="login">Come arrivare</a></li>
-								<li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="navicon">
-						<a class="nav-toggle" href="#"><span></span></a>
-					</div>
-				</div>
-			</header>
-		</section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="hero-content text-center">
-						<img src="img/logo-lg.png">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4 hidden-xs"></div>
-				<div class="col-sm-4 hidden-xs text-center"><a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
-				<div class="col-sm-4 hidden-xs"></div>
-			</div>
-		</div>
-		<div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
-	</section>
-
-	<section id="invitation" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1>CI SPOSIAMO</h1>
-					<h3>Il 'Grande Giorno' è Domenica 7 settembre 2025 e vorremmo che tu partecipassi alla nostra festa. <!-- INSERIRE SU DUE RIGHE -->
-					</h3>
-					<div id="countdown-text"><h3>Caricamento countdown...</h3></div>
-					<div class="share-bar"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="intro">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h3 class="header">Come ci siamo conosciuti</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 hidden-sm hidden-xs"><img src="img/Davide_profilo.jpg" class="wp1"></div>
-				<div class="col-md-6">
-					<p>
-						<!-- TESTO IRENE -->
-						Ho conosciuto Irene nell’estate del 2010, durante un campo estivo. Non so se fosse il sole, la libertà delle vacanze o semplicemente lei, ma fui colpito fin dal primo momento. Ero troppo timido per parlarle, ma confidai a un amico che mi piaceva. Come
-						succede sempre, la notizia si sparse in fretta, e presto Irene lo scoprì. La sua prima reazione fu: "Davide? Chi è?" e iniziò a cercarmi tra i ragazzi del campo. Da quel momento, cominciò a osservarmi, e io feci lo stesso. Anche
-						se le attività a volte erano noiose, non ci perdemmo mai un giorno di quel campo estivo. Tra giochi, risate e qualche inevitabile litigio, ci siamo "frequentati e sopportati" a vicenda per tutta l’estate. Alla fine, trovai il coraggio
-						di chiederle di uscire… e il resto è storia!
-					</p>
-				</div>
-				<div class="col-md-3 hidden-sm hidden-xs"><img src="img/Irene_profilo.jpg" class="wp2"></div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/Irene_profilo.jpg" class="wp8"></div>
-				<div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/Davide_profilo.jpg" class="wp9"></div>
-			</div>
-		</div>
-	</section>
-
-	<section class="events section-padding" id="events">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="header">Evento</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-					<div class="wp3">
-						<p><strong>Cerimonia</strong></p>
-
-						<h5>Chiesa parrocchiale di San Pio X, Massa <span class="time">10:30 - 11:30</span></h5>
-						<p>Il nostro matrimonio verrà celebrato nella Chiesa di San Pio X a Massa, un luogo caro alle nostre famiglie e ricco di significato. Tra le sue mura semplici ma accoglienti, davanti agli sguardi commossi dei nostri cari, scambieremo le promesse d’amore più importanti della nostra vita. </p>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-					<div class="wp4">
-						<p><strong>Ricevimento</strong></p>
-
-						<h5>Ex Convento del Carmine, Fivizzano <span class="time">12:30 - 20:30</span></h5>
-						<p>Dopo la cerimonia, la festa proseguirà nell'Ex Convento del Carmine a Fivizzano, un luogo incantevole dove storia e natura si incontrano. Tra gli antichi archi in pietra e il verde dei giardini, brinderemo circondati dall’affetto di chi ci vuole bene. Una giornata piena di sorrisi, buon cibo e quell’atmosfera unica che solo la Lunigiana sa regalare.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row section-padding">
-				<div class="col-md-4 col-md-offset-4 text-center">
-					<a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-						<i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-						</button>
-						<h3 class="text-center section-padding">Dress codes?</h3>
-						<h5>Cerimonia <span class="time">Massa 10:30 - 11:30</span></h5>
-						<p>
-							<strong>Elegante e rispettoso</strong>
-							<br> La cerimonia religiosa nella Chiesa di San Pio X a Massa richiede un abbigliamento sobrio e raffinato, adatto al sacramento del matrimonio. Per gli uomini: giacca e cravatta (o completo per chi preferisce un look più formale).
-							Per le donne: vestiti eleganti, tailleur o abiti lunghi, evitando scollature eccessive o spalle scoperte. I toni classici (blu, beige, grigio, pastello) o colori tenui sono perfetti per rispettare l’atmosfera solenne della
-							funzione.
-						</p>
-						<h5>Rinfresco <span class="time">7PM - 12AM</span></h5>
-						<p>
-							<strong>Casual chic</strong>
-							<br> Dopo la sacralità della cerimonia, il rinfresco nel giardino del Convento del Carmine a Fivizzano avrà un’atmosfera più informale ma ricercata. Via libera a outfit leggeri e stilizzati, con un tocco di freschezza: per gli
-							uomini, camicia elegante con pantaloni chino (o blazer senza cravatta per un look più curato); per le donne, vestiti midi, jumpsuit o separati chic, magari con stampe delicate o colori estivi. L’importante è sentirsi a proprio
-							agio, senza rinunciare a un dettaglio di stile! Suggerimento: Evitare scarpe con tacchi troppo alti (per via dei ciottoli/giardino) e preferire accessori naturali come paglia o legno per un mood rustic-elegant.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="instagram" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h3>A picture is worth a thousand words!</h3>
-					<p>Aiutaci a ricordare l'evento utilizzando l'hashtag
-						<a href="https://instagram.com/explore/tags/davideirene25/" target="_blank">#DavideIrene25</a>
-					</p>
-				</div>
-			</div>
-			<div class="row section-border wp7">
-				<div class="col-md-4 col-md-offset-4">
-					<img src="img/iphone_instagram.jpg">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="eng-pics" class="section-padding">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h3 class="header">La nostra storia</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2">
-					<a class="fancybox" rel="group" href="img/eng_pics/Eng_01.jpg">
-						<div class="img-wrap">
-							<div class="overlay">
-								<i class="fa fa-search"></i>
-							</div>
-							<img src="img/eng_pics/Eng_01.jpg" alt="" />
-						</div>
-					</a>
-				</div>
-				<div class="col-md-2">
-					<a class="fancybox" rel="group" href="img/eng_pics/Eng_02.jpg">
-						<div class="img-wrap">
-							<div class="overlay">
-								<i class="fa fa-search"></i>
-							</div>
-							<img src="img/eng_pics/Eng_02.jpg" alt="" />
-						</div>
-					</a>
-				</div>
-				<div class="col-md-2">
-					<a class="fancybox" rel="group" href="img/eng_pics/Eng_03.jpg">
-						<div class="img-wrap">
-							<div class="overlay">
-								<i class="fa fa-search"></i>
-							</div>
-							<img src="img/eng_pics/Eng_03.jpg" alt="" />
-						</div>
-					</a>
-				</div>
-				<div class="col-md-2">
-					<a class="fancybox" rel="group" href="img/eng_pics/Eng_04.jpg">
-						<div class="img-wrap">
-							<div class="overlay">
-								<i class="fa fa-search"></i>
-							</div>
-							<img src="img/eng_pics/Eng_04.jpg" alt="" />
-						</div>
-					</a>
-				</div>
-				<div class="col-md-2">
-					<a class="fancybox" rel="group" href="img/eng_pics/Eng_05.jpg">
-						<div class="img-wrap">
-							<div class="overlay">
-								<i class="fa fa-search"></i>
-							</div>
-							<img src="img/eng_pics/Eng_05.jpg" alt="" />
-						</div>
-					</a>
-				</div>
-				<div class="col-md-2">
-					<a class="fancybox" rel="group" href="img/eng_pics/Eng_06.jpg">
-						<div class="img-wrap">
-							<div class="overlay">
-								<i class="fa fa-search"></i>
-							</div>
-							<img src="img/eng_pics/Eng_06.jpg" alt="" />
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row hidden-lg hidden-md hidden-xs">
-				<div class="col-xs-12 section-border section-padding"></div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="events section-padding" id="events">
-    <div class="container">
-        <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#testimoni-modal">
-                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;I nostri testimoni
-                </a>
-            </div>
+  <section class="hero">
+    <section class="navigation">
+      <header>
+        <div class="header-content">
+          <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="Logo"></a>
+          </div>
+          <div class="header-nav">
+            <nav>
+              <ul class="primary-nav">
+                <li><a href="#intro">Come ci siamo conosciuti</a></li>
+                <li><a href="#events">Evento</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+                <li><a href="#eng-pics">La nostra storia</a></li>
+                <li><a href="#e_se">... e se?</a></li>
+              </ul>
+              <ul class="member-actions">
+                <li><a href="#map" class="login">Come arrivare</a></li>
+                <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="navicon">
+            <a class="nav-toggle" href="#"><span></span></a>
+          </div>
         </div>
+      </header>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="hero-content text-center">
+            <img src="img/logo-lg.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 hidden-xs"></div>
+        <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
+        <div class="col-sm-4 hidden-xs"></div>
+      </div>
+    </div>
+    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+  </section>
+
+  <section id="invitation" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>CI SPOSIAMO</h1>
+          <h3>Il 'Grande Giorno' è Domenica 7 settembre 2025 e vorremmo che tu partecipassi alla nostra festa.</h3>
+          <div id="countdown-text"><h3>Caricamento countdown...</h3></div>
+          <div class="share-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="header">Come ci siamo conosciuti</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 hidden-sm hidden-xs"><img src="img/Davide_profilo.jpg" class="wp1"></div>
+        <div class="col-md-6">
+          <p>
+            Ho conosciuto Irene nell'estate del 2010, durante un campo estivo. Non so se fosse il sole, la libertà delle vacanze o semplicemente lei, ma fui colpito fin dal primo momento. Ero troppo timido per parlarle, ma confidai a un amico che mi piaceva. Come
+            succede sempre, la notizia si sparse in fretta, e presto Irene lo scoprì. La sua prima reazione fu: "Davide? Chi è?" e iniziò a cercarmi tra i ragazzi del campo. Da quel momento, cominciò a osservarmi, e io feci lo stesso. Anche
+            se le attività a volte erano noiose, non ci perdemmo mai un giorno di quel campo estivo. Tra giochi, risate e qualche inevitabile litigio, ci siamo "frequentati e sopportati" a vicenda per tutta l'estate. Alla fine, trovai il coraggio
+            di chiederle di uscire... e il resto è storia!
+          </p>
+        </div>
+        <div class="col-md-3 hidden-sm hidden-xs"><img src="img/Irene_profilo.jpg" class="wp2"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/Irene_profilo.jpg" class="wp8"></div>
+        <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/Davide_profilo.jpg" class="wp9"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events section-padding" id="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="header">Evento</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+          <div class="wp3">
+            <p><strong>Cerimonia</strong></p>
+            <h5>Chiesa parrocchiale di San Pio X, Massa <span class="time">10:30 - 11:30</span></h5>
+            <p>Il nostro matrimonio verrà celebrato nella Chiesa di San Pio X a Massa, un luogo caro alle nostre famiglie e ricco di significato. Tra le sue mura semplici ma accoglienti, davanti agli sguardi commossi dei nostri cari, scambieremo le promesse d'amore più importanti della nostra vita.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+          <div class="wp4">
+            <p><strong>Ricevimento</strong></p>
+            <h5>Ex Convento del Carmine, Fivizzano <span class="time">12:30 - 20:30</span></h5>
+            <p>Dopo la cerimonia, la festa proseguirà nell'Ex Convento del Carmine a Fivizzano, un luogo incantevole dove storia e natura si incontrano. Tra gli antichi archi in pietra e il verde dei giardini, brinderemo circondati dall'affetto di chi ci vuole bene. Una giornata piena di sorrisi, buon cibo e quell'atmosfera unica che solo la Lunigiana sa regalare.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row section-padding">
+        <div class="col-md-4 col-md-offset-4 text-center">
+          <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+            <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+            <h3 class="text-center section-padding">Dress codes?</h3>
+            <h5>Cerimonia <span class="time">Massa 10:30 - 11:30</span></h5>
+            <p>
+              <strong>Elegante e rispettoso</strong>
+              <br> La cerimonia religiosa nella Chiesa di San Pio X a Massa richiede un abbigliamento sobrio e raffinato, adatto al sacramento del matrimonio. Per gli uomini: giacca e cravatta (o completo per chi preferisce un look più formale).
+              Per le donne: vestiti eleganti, tailleur o abiti lunghi, evitando scollature eccessive o spalle scoperte. I toni classici (blu, beige, grigio, pastello) o colori tenui sono perfetti per rispettare l'atmosfera solenne della funzione.
+            </p>
+            <h5>Rinfresco <span class="time">7PM - 12AM</span></h5>
+            <p>
+              <strong>Casual chic</strong>
+              <br> Dopo la sacralità della cerimonia, il rinfresco nel giardino del Convento del Carmine a Fivizzano avrà un'atmosfera più informale ma ricercata. Via libera a outfit leggeri e stilizzati, con un tocco di freschezza: per gli
+              uomini, camicia elegante con pantaloni chino (o blazer senza cravatta per un look più curato); per le donne, vestiti midi, jumpsuit o separati chic, magari con stampe delicate o colori estivi. L'importante è sentirsi a proprio
+              agio, senza rinunciare a un dettaglio di stile! Suggerimento: Evitare scarpe con tacchi troppo alti (per via dei ciottoli/giardino) e preferire accessori naturali come paglia o legno per un mood rustic-elegant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="instagram" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3>A picture is worth a thousand words!</h3>
+          <p>Aiutaci a ricordare l'evento utilizzando l'hashtag
+            <a href="https://instagram.com/explore/tags/davideirene25/" target="_blank">#DavideIrene25</a>
+          </p>
+        </div>
+      </div>
+      <div class="row section-border wp7">
+        <div class="col-md-4 col-md-offset-4">
+          <img src="img/iphone_instagram.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="eng-pics" class="section-padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="header">La nostra storia</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <a class="fancybox" rel="group" href="img/eng_pics/Eng_01.jpg">
+            <div class="img-wrap">
+              <div class="overlay">
+                <i class="fa fa-search"></i>
+              </div>
+              <img src="img/eng_pics/Eng_01.jpg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a class="fancybox" rel="group" href="img/eng_pics/Eng_02.jpg">
+            <div class="img-wrap">
+              <div class="overlay">
+                <i class="fa fa-search"></i>
+              </div>
+              <img src="img/eng_pics/Eng_02.jpg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a class="fancybox" rel="group" href="img/eng_pics/Eng_03.jpg">
+            <div class="img-wrap">
+              <div class="overlay">
+                <i class="fa fa-search"></i>
+              </div>
+              <img src="img/eng_pics/Eng_03.jpg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a class="fancybox" rel="group" href="img/eng_pics/Eng_04.jpg">
+            <div class="img-wrap">
+              <div class="overlay">
+                <i class="fa fa-search"></i>
+              </div>
+              <img src="img/eng_pics/Eng_04.jpg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a class="fancybox" rel="group" href="img/eng_pics/Eng_05.jpg">
+            <div class="img-wrap">
+              <div class="overlay">
+                <i class="fa fa-search"></i>
+              </div>
+              <img src="img/eng_pics/Eng_05.jpg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a class="fancybox" rel="group" href="img/eng_pics/Eng_06.jpg">
+            <div class="img-wrap">
+              <div class="overlay">
+                <i class="fa fa-search"></i>
+              </div>
+              <img src="img/eng_pics/Eng_06.jpg" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row hidden-lg hidden-md hidden-xs">
+        <div class="col-xs-12 section-border section-padding"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events section-padding" id="events">
+    <div class="container">
+      <div class="row section-padding">
+        <div class="col-md-4 col-md-offset-4 text-center">
+          <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#testimoni-modal">
+            <i class="fa fa-barcode"></i>&nbsp;&nbsp;I nostri testimoni
+          </a>
+        </div>
+      </div>
     </div>
 
     <div id="testimoni-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span>&times;</span>
-                    </button>
-                    <h3 class="text-center">I nostri testimoni</h3>
-                    
-                    <div class="row"> 
-                        <div class="col-sm-6 text-center">
-                            <h4>I testimoni dello sposo</h4>
-                            <div class="testimonial-circle">
-                                <img src="img/Letizia_profilo.jpg" alt="Testimoni sposo" class="testimonial-image">
-                            </div>
-                            TESTO
-                            <div class="testimonial-circle">
-                                <img src="img/Luca_profilo.jpg" alt="Testimoni sposo" class="testimonial-image">
-                            </div>
-                            TESTO
-                        </div>
-                        
-                        <div class="col-sm-6 text-center">
-                            <h4>I testimoni della sposa</h4>
-                            <div class="testimonial-circle">
-                                <img src="img/Lorenzo_profilo.jpg" alt="Testimoni sposa" class="testimonial-image">
-                            </div>
-                            TESTO
-                            <div class="testimonial-circle">
-                                <img src="img/Gaia_profilo.jpg" alt="Testimoni sposa" class="testimonial-image">
-                            </div>
-                            TESTO
-                        </div>
-                    </div>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span>&times;</span>
+            </button>
+            <h3 class="text-center">I nostri testimoni</h3>
+            
+            <div class="row"> 
+              <div class="col-sm-6 text-center">
+                <h4>I testimoni dello sposo</h4>
+                <div class="testimonial-circle">
+                  <img src="img/Letizia_profilo.jpg" alt="Testimoni sposo" class="testimonial-image">
                 </div>
+                TESTO
+                <div class="testimonial-circle">
+                  <img src="img/Luca_profilo.jpg" alt="Testimoni sposo" class="testimonial-image">
+                </div>
+                TESTO
+              </div>
+              
+              <div class="col-sm-6 text-center">
+                <h4>I testimoni della sposa</h4>
+                <div class="testimonial-circle">
+                  <img src="img/Lorenzo_profilo.jpg" alt="Testimoni sposa" class="testimonial-image">
+                </div>
+                TESTO
+                <div class="testimonial-circle">
+                  <img src="img/Gaia_profilo.jpg" alt="Testimoni sposa" class="testimonial-image">
+                </div>
+                TESTO
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
+  <div class="text-center" id="map">
+    <h3>Come arrivare?</h3>
+  </div>
 
+  <div class="text-center section-padding">
+    <div class="container how-to-reach">
+      <div class="row justify-content-center">
+        <div class="col-auto mb-3">
+          <a id="show-map1" class="btn-reach d-block">
+            <i class="fas fa-church"></i>
+            <span>CHIESA DI SAN PIO X</span>
+            <small>Via Roma 123, Città</small>
+          </a>
+        </div>
+        
+        <div class="col-auto mb-3">
+          <a id="show-map2" class="btn-reach d-block">
+            <i class="fas fa-building"></i>
+            <span>EX CONVENTO DEL CARMINE</span>
+            <small>Piazza Garibaldi 1, Città</small>
+          </a>
+        </div>
+      </div>
+    </div>
 
-	<div class="text-center" id="map">
-		<h3>Come arrivare?</h3>
-	</div>
+    <section id="map-1" class="section-padding">
+      <div class="text-center">
+        <h3>Chiesa Parrocchiale di San Pio X, Massa</h3>
+      </div>
 
-	<div class="text-center section-padding">
+      <div class="google-maps-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.4342278195077!2d10.130628775299353!3d44.03308482777963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d50ed0994039af%3A0x940b87658590e223!2sChiesa%20Parrocchiale%20di%20San%20Pio%20X!5e0!3m2!1sit!2sit!4v1743145952388!5m2!1sit!2sit"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
 
-		<div class="container how-to-reach">
-		  <div class="row justify-content-center"> <!-- Centra le colonne -->
-		    <!-- Pulsante 1 -->
-		    <div class="col-auto mb-3"> <!-- Colonna adatta alla larghezza del contenuto -->
-		      <a id="show-map1" class="btn-reach d-block"> <!-- d-block per occupare tutta la larghezza disponibile -->
-		        <i class="fas fa-church"></i>
-		        <span>CHIESA DI SAN PIO X</span>
-		        <small>Via Roma 123, Città</small>
-		      </a>
-		    </div>
-		    
-		    <!-- Pulsante 2 -->
-		    <div class="col-auto mb-3">
-		      <a id="show-map2" class="btn-reach d-block">
-		        <i class="fas fa-building"></i>
-		        <span>EX CONVENTO DEL CARMINE</span>
-		        <small>Piazza Garibaldi 1, Città</small>
-		      </a>
-		    </div>
-		  </div>
-		</div>
+    <section id="map-2" class="section-padding" style="display: none;">
+      <div class="text-center">
+        <h3>Ex Convento del Carmine, Fivizzano</h3>
+      </div>
 
-		<section id="map-1" class="section-padding">
-			<div class="text-center">
-				<h3>Chiesa Parrocchiale di San Pio X, Massa</h3>
-			</div>
+      <div class="google-maps-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.1899962317584!2d10.126039575104986!3d44.230984014872085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d5164ae7000013%3A0x187324e9a04a84af!2sEx%20Convento%20del%20Carmine!5e1!3m2!1sit!2sit!4v1743099175647!5m2!1sit!2sit"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </div>
 
-			<div class="google-maps-iframe">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.4342278195077!2d10.130628775299353!3d44.03308482777963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d50ed0994039af%3A0x940b87658590e223!2sChiesa%20Parrocchiale%20di%20San%20Pio%20X!5e0!3m2!1sit!2sit!4v1743145952388!5m2!1sit!2sit"
-				width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-				</iframe>
-			</div>
+  <section class="events section-padding" id="e_se">
+    <div class="container">
+      <div class="row section-padding">
+        <div class="col-md-4 col-md-offset-4 text-center">
+          <h3>Domande frequenti</h3>
+          <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#contributo-modal">
+            <i class="fa fa-barcode"></i>&nbsp;&nbsp;Clicca qui!
+          </a>
+        </div>
+      </div>
+    </div>
 
-		</section>
+    <div id="contributo-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+            <h3 class="text-center section-padding">Domande frequenti</h3>
+            <p>
+              <strong>... e il regalo?</strong>
+              <br> La vostra presenza è già un grande regalo, ma qualora voleste 
+            </p>
 
-		<section id="map-2" class="section-padding" style="display: none;">
-			<div class="text-center">
-				<h3>Ex Convento del Carmine, Fivizzano</h3>
-			</div>
+            <p>
+              <strong>... e se non posso mangiare determinati alimenti?</strong>
+              <br> Che si tratti di allergie o scelte personali, segnalaci tutto nel form "Esigenze alimentari" quando confermi la tua partecipazione.
+            </p>
 
-			<div class="google-maps-iframe">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.1899962317584!2d10.126039575104986!3d44.230984014872085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d5164ae7000013%3A0x187324e9a04a84af!2sEx%20Convento%20del%20Carmine!5e1!3m2!1sit!2sit!4v1743099175647!5m2!1sit!2sit"
-				width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-				</iframe>
-			</div>
-		</section>
-	</div>
+            <p>
+              <strong>... e se potessi partecipare solo alla cerimonia/rinfresco?</strong>
+              <br> Ti invitiamo a farcelo sapere tramite il form all'interno del campo "Note aggiuntive".
+            </p>
 
-	<section class="events section-padding" id="e_se">
-		<div class="container">
-			<div class="row section-padding">
-				<div class="col-md-4 col-md-offset-4 text-center">
-					<h3>Domande frequenti</h3>
-					<a class="btn btn-accent btn-small" data-toggle="modal" data-target="#contributo-modal">
-						<i class="fa fa-barcode"></i>&nbsp;&nbsp;Clicca qui!
-					</a>
-				</div>
-			</div>
-		</div>
+            <p>
+              <strong>... e se volessi portare anche i miei bambini?</strong>
+              <br> Sono ovviamente i benvenuti, segnala nel campo "Note aggiuntive" quanti saranno e se hanno esigenze particolari!
+            </p>
 
-		<div id="contributo-modal" class="modal fade" tabindex="-1" role="dialog">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-						</button>
-						<h3 class="text-center section-padding">Domande frequenti</h3>
-						<p>
-							<strong>... e il regalo?</strong>
-							<br> La vostra presenza è già un grande regalo, ma qualora voleste 
-						</p>
+            <p>
+              <strong>... e se non sapessi dove parcheggiare?</strong>
+              <br> Per quanto riguarda la funzione religiosa, sono presenti numerosi parcheggi gratuiti a poca distanza dalla chiesa. Quanto al ricevimento, il luogo dell'evento è dotato di ampio parcheggio gratuito privato!
+            </p>
 
-						<p>
-							<strong>... e se non posso mangiare determinati alimenti?</strong>
-							<br> Che si tratti di allergie o scelte personali, segnalaci tutto nel form "Esigenze alimentari" quando confermi la tua partecipazione.
-						</p>
+            <p>
+              <strong>...e se piovesse?</strong>
+              <br> In chiesa non ci sono problemi, la festa dovrebbe svolgersi in parte in un bel giardino... ma, tra porticato e sale interne, siamo pronti a ogni evenienza!
+            </p>
 
-						<p>
-							<strong>... e se potessi partecipare solo alla cerimonia/rinfresco?</strong>
-							<br> Ti invitiamo a farcelo sapere tramite il form all'interno del campo "Note aggiuntive".
-						</p>
+            <p>
+              <strong>...e se non avessi trovato la risposta che cerco?</strong>
+              <br> Scrivici, chiamaci o mandaci un piccione viaggiatore!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						<p>
-							<strong>... e se volessi portare anche i miei bambini?</strong>
-							<br> Sono ovviamente i benvenuti, segnala nel campo "Note aggiuntive" quanti saranno e se hanno esigenze particolari!
-						</p>
+  <section class="rsvp text-center" id="rsvp">
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+            <div class="section-padding">
+              <h3>Grazie!</h3>
+              <p>Siamo felici di poterti avere con noi!</p>
+              <div id="add-to-cal"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-						<p>
-							<strong>... e se non sapessi dove parcheggiare?</strong>
-							<br> Per quanto riguarda la funzione religiosa, sono presenti numerosi parcheggi gratuiti a poca distanza dalla chiesa. Quanto al ricevimento, il luogo dell'evento è dotato di ampio parcheggio gratuito privato!
-						</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h3>Che stai aspettando?</h3>
+          <p>Conferma la presenza il prima possibile!</p>
+          <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="form-input-group">
+                  <i class="fa fa-envelope"></i>
+                  <input type="email" name="email" class="" placeholder="La tua email" required>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-input-group">
+                  <i class="fa fa-user"></i>
+                  <input name="name" class="" placeholder="Il tuo nome" required>
+                </div>
+              </div>
+            </div>
 
-						<p>
-							<strong>...e se piovesse?</strong>
-							<br> In chiesa non ci sono problemi, la festa dovrebbe svolgersi in parte in un bel giardino... ma, tra porticato e sale interne, siamo pronti a ogni evenienza!
-						</p>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="form-input-group">
+                  <i class="fa fa-cutlery"></i>
+                  <input name="add-food" class="" placeholder="Esigenze alimentari">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-input-group">
+                  <i class="fa fa-commenting"></i>
+                  <input name="add-notes" class="" placeholder="Note aggiuntive">
+                </div>
+              </div>
+            </div>
 
-						<p>
-							<strong>...e se non avessi trovato la risposta che cerco?</strong>
-							<br> Scrivici, chiamaci o mandaci un piccione viaggiatore!
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="form-input-group">
+                  <i class="fa fa-users"></i>
+                  <input type="number" name="extras" class="" min="0" max="10" placeholder="Numero partecipanti" required>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-input-group">
+                  <i class="fa fa-key"></i>
+                  <input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Codice di invito" required>
+                </div>
+              </div>
+            </div>
 
-	<section class="rsvp text-center" id="rsvp">
-		<div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-						</button>
-						<div class="section-padding">
-							<h3>Grazie!</h3>
-							<p>Siamo felici di poterti avere con noi!</p>
-							<div id="add-to-cal"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="row">
+              <div class="col-md-12" id="alert-wrapper"></div>
+            </div>
+            <button class="btn-fill rsvp-btn">
+              Arrivo!
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<h3>Che stai aspettando?</h3>
-					<p>Conferma la presenza il prima possibile!</p>
-					<form id="rsvp-form" class="rsvp-form" action="" method="POST">
-						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<div class="form-input-group">
-									<i class="fa fa-envelope"></i>
-									<input type="email" name="email" class="" placeholder="La tua email" required>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="form-input-group">
-									<i class="fa fa-user"></i>
-									<input name="name" class="" placeholder="Il tuo nome" required>
-								</div>
-							</div>
-						</div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center content">
+          <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+          <p>Scritto da Davide, Irene e un po' di AI</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<div class="form-input-group">
-									<i class="fa fa-cutlery"></i>
-									<input name="add-food" class="" placeholder="Esigenze alimentari">
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="form-input-group">
-									<i class="fa fa-commenting"></i>
-									<input name="add-notes" class="" placeholder="Note aggiuntive">
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<div class="form-input-group">
-									<i class="fa fa-users"></i>
-									<input type="number" name="extras" class="" min="0" max="10" placeholder="Numero partecipanti" required>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="form-input-group">
-									<i class="fa fa-key"></i>
-									<input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Codice di invito" required>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-12" id="alert-wrapper"></div>
-						</div>
-						<button class="btn-fill rsvp-btn">
-							Arrivo!
-						</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-center content">
-					<span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-					<p>Scritto da Davide, Irene e un po' di AI</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+  <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+  <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/vendor/ouical.js"></script>
+  <script src="js/scripts.min.js"></script>
 </body>
-
-<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
-<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
-
 </html>
