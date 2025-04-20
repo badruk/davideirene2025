@@ -2,6 +2,9 @@
 @import"https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic";
 @import"https://fonts.googleapis.com/css?family=Nunito:400,300,700";
 
+
+
+
 p {
 	font-size: 15px;
 	line-height: 29px;
@@ -9,13 +12,28 @@ p {
 	padding-bottom: 20px
 }
 
+
+@font-face {
+  font-family: 'adelia';
+  src: url('../fonts/adelia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
-	font: "regular 400";
+	font-family:"adelia";
 	font-size: 60px
 }
 
 h2 {
 	font-size: 40px;
+	font-weight: 300;
+	color: #3d4351
+}
+
+hadelia {
+	font-family:"adelia";
+	font-size: 30px;
 	font-weight: 300;
 	color: #3d4351
 }
@@ -1204,6 +1222,15 @@ body.modal-open {
 
 .btn-map small {
   color: rgba(255,255,255,0.8) !important;
+}
+
+@media (max-width: 768px) {
+	.hero {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background: url("../img/hero-mobile.jpg") center center;
+	}
 }
 
 /* Ottimizzazione mobile */
