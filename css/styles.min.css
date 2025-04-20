@@ -10,6 +10,7 @@ p {
 }
 
 h1 {
+	font: "regular 400";
 	font-size: 60px
 }
 
@@ -305,6 +306,41 @@ section .header {
 .wp9 {
 	-webkit-animation-delay: .3s;
 	animation-delay: .3s
+}
+
+.profilo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* effetto circolare */
+  border: 3px solid #f0f0f0;
+  background-color: transparent; /* garantisce nessuno sfondo */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profilo-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+.debug-img {
+    background-color: white;
+    border: 1px dashed red;
 }
 
 .bounceInLeft,
