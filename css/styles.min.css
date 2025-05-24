@@ -4,6 +4,79 @@
 
 
 
+/* Contenitore della sezione mobile */
+#gif-bg {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* Immagine GIF */
+.gif-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Oscuramento */
+.gif-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.5); /* stesso valore del video */
+  z-index: 2;
+}
+
+/* Contenuto centrato sopra la gif */
+.gif-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+}
+
+.gif-content h5 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.gif-content p {
+  color: #fff;
+  font-size: 15px;
+}
+
+
+/* Nascondi il video su mobile */
+.video-desktop {
+  display: block;
+}
+
+.video-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .video-desktop {
+    display: none !important;
+  }
+
+  .video-mobile {
+    display: block !important;
+  }
+}
+
+
+
 
 p {
 	font-size: 15px;
