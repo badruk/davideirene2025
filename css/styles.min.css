@@ -3,79 +3,77 @@
 @import"https://fonts.googleapis.com/css?family=Nunito:400,300,700";
 
 
-
 /* Contenitore della sezione mobile */
 #gif-bg {
-  position: relative;
-  height: 300px;
-  overflow: hidden;
+	position: relative;
+	height: 300px;
+	overflow: hidden;
 }
 
 /* Immagine GIF */
 .gif-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
 }
 
 /* Oscuramento */
 .gif-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(17, 17, 17, 0.5); /* stesso valore del video */
-  z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(17, 17, 17, 0.5);
+	/* stesso valore del video */
+	z-index: 2;
 }
 
 /* Contenuto centrato sopra la gif */
 .gif-content {
-  position: relative;
-  z-index: 3;
-  text-align: center;
-  padding-top: 100px;
-  color: white;
+	position: relative;
+	z-index: 3;
+	text-align: center;
+	padding-top: 100px;
+	color: white;
 }
 
 .gif-content h5 {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 10px;
-  text-transform: uppercase;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 10px;
+	text-transform: uppercase;
 }
 
 .gif-content p {
-  color: #fff;
-  font-size: 15px;
+	color: #fff;
+	font-size: 15px;
 }
 
 
 /* Nascondi il video su mobile */
 .video-desktop {
-  display: block;
+	display: block;
 }
 
 .video-mobile {
-  display: none;
+	display: none;
 }
 
 @media (max-width: 768px) {
-  .video-desktop {
-    display: none !important;
-  }
+	.video-desktop {
+		display: none !important;
+	}
 
-  .video-mobile {
-    display: block !important;
-  }
+	.video-mobile {
+		display: block !important;
+	}
 }
-
-
 
 
 p {
@@ -87,14 +85,14 @@ p {
 
 
 @font-face {
-  font-family: 'adelia';
-  src: url('../fonts/adelia.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'adelia';
+	src: url('../fonts/adelia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 h1 {
-	font-family:"adelia";
+	font-family: "adelia";
 	font-size: 60px
 }
 
@@ -105,7 +103,7 @@ h2 {
 }
 
 hadelia {
-	font-family:"adelia";
+	font-family: "adelia";
 	font-size: 30px;
 	font-weight: 300;
 	color: #3d4351
@@ -400,38 +398,41 @@ section .header {
 }
 
 .profilo-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%; /* effetto circolare */
-  border: 3px solid #f0f0f0;
-  background-color: transparent; /* garantisce nessuno sfondo */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  animation: fadeInUp 0.8s ease-out forwards;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+	/* effetto circolare */
+	border: 3px solid #f0f0f0;
+	background-color: transparent;
+	/* garantisce nessuno sfondo */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	opacity: 0;
+	animation: fadeInUp 0.8s ease-out forwards;
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .profilo-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+	transform: scale(1.03);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 
 .debug-img {
-    background-color: white;
-    border: 1px dashed red;
+	background-color: white;
+	border: 1px dashed red;
 }
 
 .bounceInLeft,
@@ -1139,6 +1140,7 @@ header .member-actions {
 .rsvp .rsvp-form .form-input-group i.fa-envelope,
 .rsvp .rsvp-form .form-input-group i.group,
 .rsvp .rsvp-form .form-input-group i.fa-cutlery,
+.rsvp .rsvp-form .form-input-group i.fa-music,
 .rsvp .rsvp-form .form-input-group i.fa-commenting,
 .rsvp .rsvp-form .form-input-group .fa-key {
 	font-size: 14px;
@@ -1219,82 +1221,83 @@ body.modal-open {
 }
 
 .testimonial-circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 15px auto;
-    border: 3px solid #f0f0f0;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 15px auto;
+	border: 3px solid #f0f0f0;
 }
 
 .testimonial-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 /* Ottimizzazione per il modal */
 #testimoni-modal .modal-body {
-    padding: 30px;
+	padding: 30px;
 }
 
 #testimoni-modal h4 {
-    margin-top: 20px;
-    color: #555;
+	margin-top: 20px;
+	color: #555;
 }
 
 /* Stile base per tutti i dispositivi */
 .btn-reach {
-  display: block;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  background: white;
-  color: #333;
-  text-align: left;
-  text-decoration: none;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-  border: 1px solid #e0e0e0;
+	display: block;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background: white;
+	color: #333;
+	text-align: left;
+	text-decoration: none;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	border: 1px solid #e0e0e0;
 }
 
 /* Stile hover */
 .btn-reach:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  text-decoration: none;
-  color: #222;
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+	color: #222;
 }
 
 /* Icone */
 .btn-reach i {
-  margin-right: 10px;
-  font-size: 1.2em;
-  color: #8e6c88; /* Colore tema */
+	margin-right: 10px;
+	font-size: 1.2em;
+	color: #8e6c88;
+	/* Colore tema */
 }
 
 /* Testo piccolo (indirizzo) */
 .btn-reach small {
-  display: block;
-  margin-top: 5px;
-  color: #666;
-  font-size: 0.85em;
+	display: block;
+	margin-top: 5px;
+	color: #666;
+	font-size: 0.85em;
 }
 
 /* Pulsante mappa speciale */
 .btn-map {
-  background: linear-gradient(135deg, #8e6c88, #6c5b7b);
-  color: white !important;
-  text-align: center;
+	background: linear-gradient(135deg, #8e6c88, #6c5b7b);
+	color: white !important;
+	text-align: center;
 }
 
 .btn-map i {
-  color: white;
+	color: white;
 }
 
 .btn-map small {
-  color: rgba(255,255,255,0.8) !important;
+	color: rgba(255, 255, 255, 0.8) !important;
 }
 
 @media (max-width: 768px) {
@@ -1308,32 +1311,35 @@ body.modal-open {
 
 /* Ottimizzazione mobile */
 @media (max-width: 768px) {
-  .btn-reach {
-	  background: transparent;
-	  border: 2px solid #8e6c88;
-	  color: #8e6c88;
+	.btn-reach {
+		background: transparent;
+		border: 2px solid #8e6c88;
+		color: #8e6c88;
 	}
-  
-  .how-to-reach h2 {
-    font-size: 1.5em;
-  }
+
+	.how-to-reach h2 {
+		font-size: 1.5em;
+	}
 }
+
 .btn-reach {
-  width: 280px; /* Larghezza fissa per entrambi i pulsanti */
-  margin: 0 auto; /* Centratura orizzontale */
-  padding: 15px;
-  /* Mantieni tutti gli altri stili esistenti */
+	width: 280px;
+	/* Larghezza fissa per entrambi i pulsanti */
+	margin: 0 auto;
+	/* Centratura orizzontale */
+	padding: 15px;
+	/* Mantieni tutti gli altri stili esistenti */
 }
 
 /* Ottimizzazione mobile */
 @media (max-width: 576px) {
-  .row.justify-content-center {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .col-auto {
-    width: 100%;
-    max-width: 280px;
-  }
+	.row.justify-content-center {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col-auto {
+		width: 100%;
+		max-width: 280px;
+	}
 }
