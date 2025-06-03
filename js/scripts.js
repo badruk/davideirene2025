@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         else {
             document.getElementById("text-ricevimento_e_cerimonia").style.display = "none";
-            document.getElementById("div-show-map1").style.display = "none";
+            document.getElementById("div-show-map2").style.display = "none";
             document.getElementById("rsvp").style.display = "none";
 
 
