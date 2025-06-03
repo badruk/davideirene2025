@@ -189,7 +189,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (inviteInput) {
                 inviteInput.value = invCode;
                 document.getElementById("text-cerimonia").style.display = "none";
-
             }
 
             // Mostra eventuale sezione nascosta opzionale
@@ -203,8 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("div-show-map1").style.display = "none";
             document.getElementById("div-show-map2").style.display = "none";
             document.getElementById("rsvp").style.display = "none";
-
-
+            document.getElementById("ese_inv").style.display = "none";
         }
     });
 })();
