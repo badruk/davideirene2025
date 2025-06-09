@@ -203,6 +203,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("div-show-map2").style.display = "none";
             document.getElementById("rsvp").style.display = "none";
             document.getElementById("ese_inv").style.display = "none";
+            document.getElementById("dresscode_button").style.display = "none";
+            document.getElementById("rsvp_button").style.display = "none";
         }
     });
 })();
