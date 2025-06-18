@@ -100,24 +100,25 @@ p {
 
 h1 {
     font-family: "brittany";
-    font-size: 60px
+    font-size: 60px;
+    color: #8D9E96
 }
 
 h2 {
     font-size: 40px;
     font-weight: 300;
-    color: #3d4351
+    color: #8D9E96
 }
 
 hadelia {
     font-family: "brittany";
     font-size: 40px;
     font-weight: 300;
-    color: #3d4351
+    color: #8D9E96
 }
 
 h3 {
-    color: #3d4351;
+    color: #8D9E96;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
